@@ -8,17 +8,32 @@
     <link rel="stylesheet" href="css/cpcsirt.css">
 </head>
 <body>
-    <button class="Emergency" onclick="mostrar();">¿Tienes una Emergencia?</button> 
-    <div id="form">
-        <form class="cent" action="/send-email" method="post">
-            <label>Empresa:</label><br>
-            <input id="datem" name="empresa" type="text"  placeholder="Ingresa el nombre la empresa" autofocus><br>
-            <label>Correo:</label><br>
-            <input id="datcor" name="email" type="text"  placeholder="ingresa tu correo"><br>
-            <label >Emergencia:</label><br>
-            <textarea  name="emer"  cols="25" rows="10" placeholder="describe tu Emergencia"></textarea><br>
-            <button id="btnenv">Enviar</button>
-        </form>
+    <button id="open">¿Tienes una Emergencia?</button> 
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>¿Cual es su Emergencia?</h1>
+            <form action="/send-email" method="post">
+                <fieldset>
+                        <p>
+                            <input type="text" name="empresa" id="" placeholder="Nombre de la empresa" required>
+                        </p>
+                        <p>
+                            <input type="text" name="nombre_em" id="" placeholder="Nombre completo" required>
+                        </p>
+                        <p>
+                            <input type="number" name="telefono" placeholder="Telefono" required>
+                        </p>
+                        <p>
+                            <input type="text" name="email" id="" placeholder="Correo" required>
+                        </p>
+                        <p>
+                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        </p>
+                        <button id="btn_enviar">Enviar</button>
+                </fieldset>
+            </form>
+            <button id="close">Cerrar</button>
+        </div>
     </div>
    <script src="JS/script.js"></script>
 </body>

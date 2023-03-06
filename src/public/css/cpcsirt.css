@@ -1,54 +1,81 @@
-.Emergency{
-    /*border: none;*/ 
-     margin-left: 40%;
-     margin-top: 10%;
-     width: 15%;
-     border-radius: 15px;
-     box-shadow: 5px 6px rgba(0,0,0,0.5);
-     background-color: #F80707;
-     color: white;
-     text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    box-sizing: border-box;
 }
- 
-.Emergency:active{
-     background-color: #38A9DA;
-     box-shadow: 5px 6px rgba(0,0,0,0.5);
-     transform: scale(0.97);
-}
- 
- /*formualrio */
-#form{
-     border: 3px solid black;
-     border-radius: 15%;
-     background-color: #38A9DA;
-     display: none;
-     position: absolute;
-     top: 30%;
-     left: 37%;
-     height: 48%;
-     width: 20%;
-    
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
 }
 
-#datem{
-    width:80% ;
-}
-
-#datcor{
-    width:80% ;
+button{
+    background-color: #39D332;
+    color: white;
+    font-family: 'Silkscreen',serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 10px 25px;
 }
 
 
-.cent{
-     padding-left: 18%;
-     padding-top: 8%;
+.modal-container{
+    opacity: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
 }
- 
- #btnenv{
-     border-radius: 15px;
-     width: 25%;
-     background-color:#39D332;
-     color: white;
-     box-shadow: 5px 6px rgba(0,0,0,0.5);
-     transform: translate(95%, 80%);
- }
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal{
+    background-image: url('../img/Página_CPCSIRT_1.png');
+    background-size:cover;
+    /*background-color: white;*/
+    width: 100vh;
+    max-width: 100%;
+    padding: 50px 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.modal input{
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.modal textarea{
+    opacity: 0.5;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.modal ::placeholder{
+    text-align: center;
+}
+
+.modal h1{
+    margin: 0;
+    color: white;
+}
+
+#close{
+    background-color: red;
+    font-size: 15px;
+    padding: 8px 8px;
+    margin-top: 20px;
+}
