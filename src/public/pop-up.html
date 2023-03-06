@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpeace Cpcsirt</title>
+    <link rel="stylesheet" href="css/cpcsirt.css">
+</head>
+<body>
+    <button id="open">¿Tienes una Emergencia?</button> 
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>¿Cual es su Emergencia?</h1>
+            <form action="/send-email" method="post">
+                <fieldset>
+                        <p>
+                            <input type="text" name="empresa" id="" placeholder="Nombre de la empresa" required>
+                        </p>
+                        <p>
+                            <input type="text" name="nombre_em" id="" placeholder="Nombre completo" required>
+                        </p>
+                        <p>
+                            <input type="number" name="telefono" placeholder="Telefono" required>
+                        </p>
+                        <p>
+                            <input type="text" name="email" id="" placeholder="Correo" required>
+                        </p>
+                        <p>
+                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        </p>
+                        <button id="btn_enviar">Enviar</button>
+                </fieldset>
+            </form>
+            <button id="close">Cerrar</button>
+        </div>
+    </div>
+   <script src="JS/script.js"></script>
+</body>
+</html>

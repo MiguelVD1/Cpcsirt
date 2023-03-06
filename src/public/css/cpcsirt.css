@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 *{
     box-sizing: border-box;
 }
-body{
+*body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@ button{
 }
 
 .modal{
-    background-image: url('../img/Página_CPCSIRT_1.png');
+    background-image: url('../img/Página_CPCSIRT_1.png');
     background-size:cover;
     /*background-color: white;*/
     width: 100vh;
@@ -71,6 +71,8 @@ button{
 .modal h1{
     margin: 0;
     color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
 }
 
 #close{

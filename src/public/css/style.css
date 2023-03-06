@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/Página_CPCSIRT_1.png");
+    background-size: cover;
+}
+
+/*-----NAVBAR CON CORTE-----------*/
+.eti{
+    /*border: 3px solid red;*/
+    background: linear-gradient(36deg, transparent 15%, #0b4894 0% 40%, #021c3c 80% );
+    width: 750px;
+    height: 100px;    
+    box-shadow: 50px 10px 50px -38px;
+    margin-left: 485px;
+
+}
+.menu{
+    /*border: 2px red solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding-left: 90px;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    margin-left: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    
+}
+
+.menu a:hover{
+    /*Configuración hover de los botones de la navbar*/
+    background: white;
+    padding: 5px;
+    color: black;
+    border-radius: 4px;
+    transition: 0.8s;
+}
+/*Aquí termina la NavBar*/
+
+
+
+/*----IMAGEN DERECHA CON CORTE MAS TODOS LOS LOGOS DE ENMEDIO-------------*/
+.etiqueta-derecha{
+
+   /* border: 2px solid black;*/
+    position: relative;
+    margin: 0;
+
+}
+
+/*Todo lo de la etiqueta "Reportar un problema Cibernético"*/
+.etiqueta-derecha h1{
+   /* border: 3px solid red;
+    background: red;*/
+    width: 580px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-left: 110px;
+    background: linear-gradient(36deg, transparent 15%, red 0% );
+    right: 0;
+    margin: 0;
+    position: absolute;
+   
+}
+
+.etiqueta-derecha h1 a{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.etiqueta-derecha h1:hover{
+  transition: 0.9s;
+  background: linear-gradient(36deg, transparent 15%, #0b4894 0% );
+}
+
+.img-derecha{
+    float: right;
+    height: 500px;
+   
+    
+
+}
+
+.prevencion-logo{
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    margin-right: 300px;
+}
+
+.deteccion-logo{
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 195px;
+    margin-right: 230px;
+}
+
+.respuesta-logo{
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    margin-right: 305px;
+}
+
+.cpcsirt-etiqueta{
+  position: absolute;
+  left: 0;
+  top:100px;
+  margin-left: 150px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+
+}
+
+.incidentes-seguridad{
+  position: absolute;
+  left: 0;
+  top:190px;
+  margin-left: 150px;
+  color: rgb(89, 117, 231);
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.descripcion{
+  position: absolute;
+  left: 0;
+  top:270px;
+  margin-left: 150px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.boton-incidente{
+  position: absolute;
+  left: 0;
+  top:355px;
+  margin-left: 150px;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background: red;
+  padding: 15px;
+  border-radius: 25px;
+  transition: 0.8s;
+}
+
+.boton-incidente:hover{
+    background-color: #0b4894;
+    transition: 0.9s;
+}
+
+
+/*----*/
+
+
+
+
+
+
+/*font-family: "Montserrat", sans-serif;*/
