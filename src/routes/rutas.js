@@ -1,7 +1,6 @@
 const { Router } = require('express');//mandamos a trear a express y le diecimos que vamos a ocupar rutas
 const router=Router();// secrea un objeto para difinir rutas 
 const nodemailer= require('nodemailer');
-let alert = require('alert');
 
 router.post('/send-email',async(req,res)=>{
     try{
