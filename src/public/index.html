@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpeace Cpcsirt</title>
+    <link rel="stylesheet" href="css/cpcsirt.css">
+</head>
+<body>
+    <button class="Emergency" onclick="mostrar();">¿Tienes una Emergencia?</button> 
+    <div id="form">
+        <form class="cent" action="/send-email" method="post">
+            <label>Empresa:</label><br>
+            <input id="datem" name="empresa" type="text"  placeholder="Ingresa el nombre la empresa" autofocus><br>
+            <label>Correo:</label><br>
+            <input id="datcor" name="email" type="text"  placeholder="ingresa tu correo"><br>
+            <label >Emergencia:</label><br>
+            <textarea  name="emer"  cols="25" rows="10" placeholder="describe tu Emergencia"></textarea><br>
+            <button id="btnenv">Enviar</button>
+        </form>
+    </div>
+   <script src="JS/script.js"></script>
+</body>
+</html>

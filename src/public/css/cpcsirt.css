@@ -1,0 +1,54 @@
+.Emergency{
+    /*border: none;*/ 
+     margin-left: 40%;
+     margin-top: 10%;
+     width: 15%;
+     border-radius: 15px;
+     box-shadow: 5px 6px rgba(0,0,0,0.5);
+     background-color: #F80707;
+     color: white;
+     text-align: center;
+}
+ 
+.Emergency:active{
+     background-color: #38A9DA;
+     box-shadow: 5px 6px rgba(0,0,0,0.5);
+     transform: scale(0.97);
+}
+ 
+ /*formualrio */
+#form{
+     border: 3px solid black;
+     border-radius: 15%;
+     background-color: #38A9DA;
+     display: none;
+     position: absolute;
+     top: 30%;
+     left: 37%;
+     height: 48%;
+     width: 20%;
+    
+}
+
+#datem{
+    width:80% ;
+}
+
+#datcor{
+    width:80% ;
+}
+
+
+.cent{
+     padding-left: 18%;
+     padding-top: 8%;
+}
+ 
+ #btnenv{
+     border-radius: 15px;
+     width: 25%;
+     background-color:#39D332;
+     color: white;
+     box-shadow: 5px 6px rgba(0,0,0,0.5);
+     transform: translate(95%, 80%);
+ }
