@@ -4,37 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpeace Cpcsirt</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cpcsirt.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <title>Document</title>
 </head>
 <body>
-    <button id="open">¿Tienes una Emergencia?</button> 
-    <div class="modal-container" id="modal_container">
-        <div class="modal">
-            <h1>¿Cual es su Emergencia?</h1>
-            <form action="/send-email" method="post">
-                <fieldset>
-                        <p>
-                            <input type="text" name="empresa" id="" placeholder="Nombre de la empresa" required>
-                        </p>
-                        <p>
-                            <input type="text" name="nombre_em" id="" placeholder="Nombre completo" required>
-                        </p>
-                        <p>
-                            <input type="number" name="telefono" placeholder="Telefono" required>
-                        </p>
-                        <p>
-                            <input type="text" name="email" id="" placeholder="Correo" required>
-                        </p>
-                        <p>
-                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        </p>
-                        <button id="btn_enviar">Enviar</button>
-                </fieldset>
-            </form>
-            <button id="close">Cerrar</button>
-        </div>
+   
+    
+    <div class="eti" data-aos="fade-left" data-aos-duration="2000">
+        <nav class="menu">
+            <a href="https://www.cyberpeace.tech/"target="_blank">INICIO</a>
+            <a href="https://www.cyberpeace.tech/"target="_blank">CYBERPEACE</a>
+            <a href="https://www.cyberpeace.tech/cyberpeaceservices"target="_blank">SERVICIOS</a>
+            <a href="https://www.cyberpeace.tech/contacto"target="_blank">CONTACTO</a>
+        </nav>
+      
     </div>
-   <script src="JS/script.js"></script>
+
+       <div class="etiqueta-derecha">
+
+         <h2 class="cpcsirt-etiqueta" data-aos="flip-left" data-aos-duration="2000">CPCSIRT</h2>
+         <h3 class="incidentes-seguridad" data-aos="fade-up" data-aos-duration="2000">EQUIPO DE RESPUESTA A <br> INCIDENTES DE SEGURIDAD</h3>
+         <h3 class="descripcion" data-aos="fade-up" data-aos-duration="2000" data-aos-duration="1000">Contamos con los conocimientos y experiencia para garantizar<br>Una correcta operación de seguridad alineada a las mejores prácticas<br>y estandares internacionales al contar con nuestro MDR SOC</h3>
+         <a href="javascript:void(0);" type="button" class="boton-incidente" data-aos="fade-right" id="open2">Reportar incidente</a>
+
+        <!--Lo que está a la derecha de este div-->
+        <h1><a href="javascript:void(0);" type="button" id="open">REPORTAR UN PROBLEMA CIBERNÉTICO</a></h1>
+        <img src="img/Página_CPCSIRT_13.png" class="prevencion-logo">
+        <img src="img/Página_CPCSIRT_12.png" class="deteccion-logo">
+        <img src="img/Página_CPCSIRT_14.png" class="respuesta-logo">
+
+        <img src="" alt="">
+        <img src="img/Página_CPCSIRT_5.png" class="img-derecha">
+       
+
+       </div>
+        
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+
+ <!--Código de Migue-->
+<!--<button id="open">¿Tienes una Emergencia?</button>-->
+<div class="modal-container" id="modal_container">
+    <div class="modal">
+        <h1>¿Cual es su Emergencia?</h1>
+        <form action="/send-email" method="post">
+            <fieldset>
+                    <p>
+                        <input type="text" name="empresa" id="" placeholder="Nombre de la empresa" required>
+                    </p>
+                    <p>
+                        <input type="text" name="nombre_em" id="" placeholder="Nombre completo" required>
+                    </p>
+                    <p>
+                        <input type="number" name="telefono" placeholder="Telefono" required>
+                    </p>
+                    <p>
+                        <input type="text" name="email" id="" placeholder="Correo" required>
+                    </p>
+                    <p>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    </p>
+                    <button id="btn_enviar">Enviar</button>
+            </fieldset>
+        </form>
+        <button id="close">Cerrar</button>
+    </div>
+</div>
+<script src="JS/script.js"></script>
+
 </body>
 </html>
